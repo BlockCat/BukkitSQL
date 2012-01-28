@@ -6,6 +6,8 @@ import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
 public class SQLexecutors implements BSQLinterface {
+	
+
 
 	@Override
 	public void addTable(String name , String ... values){
@@ -43,7 +45,7 @@ public class SQLexecutors implements BSQLinterface {
 	}
 
 	@Override
-	public Statement statement() {
+	public Statement getStatement() {
 		return BukkitSQL.statement;
 	}
 

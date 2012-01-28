@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
-public interface BSQLinterface {
+public abstract interface BSQLinterface {
 	
 	/**
 	 * Returns the connection made.
@@ -37,7 +37,7 @@ public interface BSQLinterface {
 	 * 	returns the statement.
 	 * @return <code>Statement</code>
 	 */
-	public Statement statement();
+	public Statement getStatement();
 	
 	/**
 	 * checks if database contains table.
